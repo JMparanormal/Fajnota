@@ -641,3 +641,6 @@ textarea:focus {
   height: auto;
   display: block;
 }
+.card p {
+  white-space: pre-line;
+}
