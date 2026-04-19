@@ -41,68 +41,66 @@ const dailyMenuItems = [
   {
     day: "Pondelok",
     title: "Denné menu",
-    description: "
-Slepačí  vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Brokolicová krémová (7,9)
-1, Bravčový steak s omáčkou so zeleného korenia, baby zemiaky (7,9)
-2, Kuracie prsia v arašidovej omáčke s ryžou  (5,7)
-3, Tekvicové risotto s kozím syrom (7)
-4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9)",
+1. Bravčový steak s omáčkou zo zeleného korenia, baby zemiaky (7,9)
+2. Kuracie prsia v arašidovej omáčke s ryžou (5,7)
+3. Tekvicové risotto s kozím syrom (7)
+4. XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
+5. Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6. Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Utorok",
     title: "Denné menu",
-    description: "Slepačí vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Kelová s párkom (1,7,9)
-1, Slovenské risotto s kuracím mäsom a syrom (7)
-2, Švédske mäsové guľky, zemiakové pyré, brusnice (1,3,6,7)
-3, Pražené rezance s tofu a vajíčkom (1,2,4,3,6,11)
-4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9)",
+1. Slovenské risotto s kuracím mäsom a syrom (7)
+2. Švédske mäsové guľky, zemiakové pyré, brusnice (1,3,6,7)
+3. Pražené rezance s tofu a vajíčkom (1,2,3,4,6,11)
+4. XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
+5. Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6. Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Streda",
     title: "Denné menu",
-    description: "Slepačí vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Kulajda (7)
-1, Vyprážané rybie filé, zemiakové pyré, tatárska omáčka (1,3,7)
-2, Pečená plnená paprika v paradajkovej omáčke, parená knedla (1,3,7)
-3, Špenátové halušky v syrovej omáčke (1,3,7)
-4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9)",
+1. Vyprážané rybie filé, zemiakové pyré, tatárska omáčka (1,3,7)
+2. Pečená plnená paprika v paradajkovej omáčke, parená knedľa (1,3,7)
+3. Špenátové halušky v syrovej omáčke (1,3,7)
+4. XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
+5. Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6. Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
-
-    {
+  {
     day: "Štvrtok",
     title: "Denné menu",
-    description: "Slepačí  vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Paradajková s parmezánom (7,9)
-1, Pečené kuracie stehno, varené zemiaky, kapustový šalát (7,9)
-2, Hovädzí stroganov, ryža (7,10)
-3, Cviklové rizoto s balkánskym syrom(7)
-4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9).",
+1. Pečené kuracie stehno, varené zemiaky, kapustový šalát (7,9)
+2. Hovädzí stroganov, ryža (7,10)
+3. Cviklové rizoto s balkánskym syrom (7)
+4. XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
+5. Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6. Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Piatok",
     title: "Denné menu",
-    description: "Slepačí vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Fazuľová na kyslo s údeným mäsom (7,9)
-1, Kurací černohorský rezeň so syrom, pečené zemiaky (1,3,7)
-2, Morčacie prsia v omáčke so sušených paradajok s baby špenátom, ryža
-3, Slivkové pirohy s makom (1,3,7)
-4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9)",
+1. Kurací černohorský rezeň so syrom, pečené zemiaky (1,3,7)
+2. Morčacie prsia v omáčke zo sušených paradajok s baby špenátom, ryža
+3. Slivkové pirohy s makom (1,3,7)
+4. XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
+5. Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6. Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
 ];
