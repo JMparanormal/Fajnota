@@ -4,14 +4,10 @@ const breakfastItems = [
   { name: "Kaiserka, syr, vajíčko", allergens: "(1,3,7)", price: "2,30 €" },
   { name: "Ham & Eggs 150g", allergens: "(1,3,7)", price: "4,20 €" },
   { name: "Miešané vajíčka 3 ks 150g", allergens: "(1,3,7)", price: "3,50 €" },
-  { name: "Donut 60g", allergens: "(1,3,7)", price: "0,90 €" },
-  { name: "Cheesecake 100g", allergens: "(1,3,7)", price: "2,90 €" },
-  { name: "Jablkový koláč s karamelom 100g", allergens: "(1,3,7)", price: "3,90 €" },
 ];
 
 const comboItems = [
   { name: "Kaiserka + nápoj", note: "zvýhodnené menu", price: "3,00 €" },
-  { name: "Donut + nápoj", note: "zvýhodnené menu", price: "1,90 €" },
   { name: "Miešané vajíčka + nápoj", note: "zvýhodnené menu", price: "4,20 €" },
   { name: "Ham & Eggs + nápoj", note: "zvýhodnené menu", price: "5,00 €" },
 ];
