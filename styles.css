@@ -1,13 +1,15 @@
 :root {
-  --bg: #f7f4ef;
+  --bg: #f7f7ef;
   --surface: #ffffff;
-  --surface-alt: #f0ece6;
-  --text: #2d241e;
-  --muted: #6f635a;
-  --line: #ded6ce;
-  --dark: #221b17;
-  --accent: #8b6b4e;
-  --shadow: 0 18px 45px rgba(34, 27, 23, 0.08);
+  --surface-alt: #f0f5e8;
+  --text: #1f2a1f;
+  --muted: #63705c;
+  --line: #dbe6d2;
+  --dark: #173f2a;
+  --accent: #e8842e;
+  --accent-soft: #fff0df;
+  --green-soft: #eaf4df;
+  --shadow: 0 18px 45px rgba(23, 63, 42, 0.1);
   --radius: 24px;
   --container: 1180px;
 }
@@ -25,11 +27,9 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text);
   line-height: 1.6;
-
-background: 
-  linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
-  url("food-bg.png");
-
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68)),
+    url("food-bg.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -52,6 +52,15 @@ textarea {
   font: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(232, 132, 46, 0.45);
+  outline-offset: 3px;
+}
+
 .container {
   width: min(100% - 32px, var(--container));
   margin: 0 auto;
@@ -61,9 +70,9 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(222, 214, 206, 0.8);
+  border-bottom: 1px solid rgba(219, 230, 210, 0.9);
 }
 
 .nav {
@@ -80,27 +89,11 @@ textarea {
   gap: 14px;
 }
 
-.brand-mark {
-  width: 52px;
-  height: 52px;
-  border-radius: 18px;
-  background: var(--dark);
-  position: relative;
-  box-shadow: var(--shadow);
+.brand-logo {
+  width: 90px;
+  height: auto;
+  display: block;
 }
-
-.brand-mark span {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.brand-mark span:nth-child(1) { top: 9px; left: 9px; }
-.brand-mark span:nth-child(2) { top: 9px; right: 9px; }
-.brand-mark span:nth-child(3) { bottom: 9px; left: 9px; }
-.brand-mark span:nth-child(4) { bottom: 9px; right: 9px; }
 
 .brand-name,
 h1,
@@ -111,6 +104,7 @@ h2 {
 .brand-name {
   font-size: 2rem;
   line-height: 1;
+  color: var(--dark);
 }
 
 .brand-subtitle {
@@ -130,20 +124,20 @@ h2 {
 .menu a,
 .mobile-menu a {
   color: var(--muted);
-  font-weight: 500;
-  transition: 0.2s ease;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 .menu a:hover,
 .mobile-menu a:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .menu-toggle {
   display: none;
   border: 1px solid var(--line);
   background: var(--surface);
-  color: var(--text);
+  color: var(--dark);
   width: 46px;
   height: 46px;
   border-radius: 14px;
@@ -153,8 +147,14 @@ h2 {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   padding: 0 16px 18px;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.mobile-menu a {
+  padding: 10px 0;
 }
 
 .mobile-menu.open {
@@ -164,8 +164,8 @@ h2 {
 .hero {
   padding: 72px 0 36px;
   background:
-    radial-gradient(circle at top left, rgba(139, 107, 78, 0.15), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(34, 27, 23, 0.08), transparent 28%);
+    radial-gradient(circle at top left, rgba(232, 132, 46, 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(23, 63, 42, 0.14), transparent 28%);
 }
 
 .hero-grid {
@@ -181,23 +181,29 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.28em;
   color: var(--accent);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .eyebrow-light {
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 h1 {
   margin: 0;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   line-height: 1.06;
+  color: var(--dark);
 }
 
 h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.1rem);
   line-height: 1.1;
+  color: var(--dark);
+}
+
+.catering-section h2 {
+  color: white;
 }
 
 h3 {
@@ -214,6 +220,20 @@ h3 {
   max-width: 760px;
 }
 
+.hero-text-box {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(219, 230, 210, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(23, 63, 42, 0.08);
+}
+
+.hero-text-box .hero-text {
+  margin: 0;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +247,7 @@ h3 {
   justify-content: center;
   padding: 14px 24px;
   border-radius: 18px;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid transparent;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
@@ -242,9 +262,18 @@ h3 {
   color: white;
 }
 
+.btn-primary:hover {
+  background: #215a3c;
+}
+
 .btn-secondary {
   background: var(--surface);
   border-color: var(--line);
+  color: var(--dark);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
 }
 
 .btn-light {
@@ -272,7 +301,7 @@ h3 {
 }
 
 .mini-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--line);
   padding: 20px;
   box-shadow: var(--shadow);
@@ -281,6 +310,7 @@ h3 {
 .mini-card h3 {
   font-size: 1rem;
   margin-bottom: 6px;
+  color: var(--dark);
 }
 
 .mini-card p {
@@ -311,10 +341,11 @@ h3 {
   justify-content: center;
   padding: 10px 14px;
   border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  color: var(--muted);
+  background: var(--accent-soft);
+  border: 1px solid rgba(232, 132, 46, 0.28);
+  color: var(--accent);
   font-size: 0.94rem;
+  font-weight: 700;
 }
 
 .info-box {
@@ -338,7 +369,7 @@ h3 {
 }
 
 .info-box-dark p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .section {
@@ -346,7 +377,7 @@ h3 {
 }
 
 .section-light {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -383,12 +414,17 @@ h3 {
   color: var(--muted);
 }
 
+.menu-description {
+  white-space: pre-line;
+}
+
 .card-badge {
   display: inline-block;
   padding: 8px 12px;
-  background: var(--surface-alt);
+  background: var(--green-soft);
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--dark);
   margin-top: 14px;
 }
 
@@ -433,7 +469,8 @@ h3 {
 
 .price {
   white-space: nowrap;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--accent);
 }
 
 .featured-card {
@@ -443,8 +480,12 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.featured-card .price {
+  color: white;
+}
+
 .combo-item {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .combo-item p {
@@ -472,7 +513,9 @@ h3 {
 }
 
 .catering-section {
-  background: var(--dark);
+  background:
+    radial-gradient(circle at top left, rgba(232, 132, 46, 0.2), transparent 30%),
+    var(--dark);
   color: white;
 }
 
@@ -483,7 +526,7 @@ h3 {
 }
 
 .light-text {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .catering-points {
@@ -493,21 +536,21 @@ h3 {
 }
 
 .catering-point {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 18px;
   padding: 14px 16px;
 }
 
 .form-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 26px;
   backdrop-filter: blur(10px);
 }
 
 .form-card p {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .contact-form {
@@ -528,13 +571,13 @@ label {
 }
 
 label span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 input,
 select,
 textarea {
-  border: 1px solid rgba(34, 27, 23, 0.08);
+  border: 1px solid rgba(23, 63, 42, 0.16);
   border-radius: 16px;
   padding: 14px 16px;
   background: rgba(255, 255, 255, 0.96);
@@ -604,6 +647,10 @@ textarea:focus {
 }
 
 @media (max-width: 820px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .menu {
     display: none;
   }
@@ -643,29 +690,52 @@ textarea:focus {
     padding: 64px 0;
   }
 }
-.brand-logo {
-  width: 90px;
-  height: auto;
-  display: block;
-}
-.card p {
-  white-space: pre-line;
-}
 
-.hero-text-box {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 18px 20px;
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(222, 214, 206, 0.95);
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(34, 27, 23, 0.08);
-}
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 24px, var(--container));
+  }
 
-.hero-text-box .hero-text {
-  margin: 0;
-}
+  .nav {
+    min-height: 74px;
+  }
 
-.menu-description {
-  white-space: pre-line;
+  .brand-logo {
+    width: 72px;
+  }
+
+  .brand-name {
+    font-size: 1.55rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+  }
+
+  .hero {
+    padding: 40px 0 28px;
+  }
+
+  .hero-cards {
+    gap: 12px;
+  }
+
+  .card,
+  .info-panel,
+  .form-card,
+  .contact-card,
+  .featured-card {
+    padding: 20px;
+  }
+
+  .menu-list {
+    padding: 14px 18px;
+  }
+
+  .coffee-card,
+  .menu-item,
+  .combo-item {
+    align-items: flex-start;
+  }
 }
