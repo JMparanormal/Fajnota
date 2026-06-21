@@ -37,13 +37,13 @@ const dailyMenuItems = [
   {
     day: "Pondelok",
     title: "Denné menu",
-    description: `Slepačí  vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Mexická zeleninová (9)
 1, Kurací Gordon Blue, varené zemiaky, tatárska omáčka (1,3,9)
 2, Grilovaný bôčik s nakladanou cibulkou, ryža s vajíčkom (3,6,10)
 3, Penne v pesto omáčke s parmezánom (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
+5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
 6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
@@ -51,12 +51,12 @@ Mexická zeleninová (9)
     day: "Utorok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9)
-Hokaido(7,9)
+Hokaido (7,9)
 1, Bravčový perkelt na luskovom prívarku (7,9)
 2, Kurací špíz, pečené zemiaky, smotanový dresing (7)
 3, Vyprážaný encián s varenými zemiakmi, tatárska omáčka (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
+5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
 6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
@@ -66,35 +66,36 @@ Hokaido(7,9)
     description: `Slepačí vývar (1,3,9)
 Gulášová polievka (9)
 1, Hovädzí Tokáň, tarhoňa (1,3)
-2, BBQ kuracie prsia s coleslaw šalátom,ryža (1,6,7,9,10)
+2, BBQ kuracie prsia s coleslaw šalátom, ryža (1,6,7,9,10)
 3, Gnocchi v špenátovej omáčke so sušenými paradajkami (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzie líčka na víne, zemiakové pyré (7,9)",
+5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
+6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
+    price: "od 6,90 €",
   },
   {
     day: "Štvrtok",
     title: "Denné menu",
-    description: `Slepačí  vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Brokolicová krémová (7,9)
 1, Francúzske zemiaky s kyslou uhorkou (3,7)
 2, Panenka na parmezánovom rizote (7,9)
 3, Šafránové risotto s hráškom a parmezánom (7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
+5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
 6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Piatok",
     title: "Denné menu",
-    description: `Slepačí  vývar (1,3,9)
+    description: `Slepačí vývar (1,3,9)
 Cesnaková krémová (7,9)
 1, Kuracie prsia na šampiňonoch, ryža (7)
 2, Mini zemiakové placky s bravčovým trhaným mäsom, cheddarová omáčka (1,3,7,9)
 3, Ryžový nákyp (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
-5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
+5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10)
 6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
@@ -102,6 +103,7 @@ Cesnaková krémová (7,9)
 
 function renderDailyMenu() {
   const wrapper = document.getElementById("dailyMenu");
+  if (!wrapper) return;
 
   wrapper.innerHTML = dailyMenuItems
     .map(
@@ -109,7 +111,7 @@ function renderDailyMenu() {
         <article class="card">
           <p class="eyebrow">${item.day}</p>
           <h3>${item.title}</h3>
-          <p>${item.description}</p>
+          <p class="menu-description">${item.description}</p>
           <span class="card-badge">${item.price}</span>
         </article>
       `
@@ -119,6 +121,7 @@ function renderDailyMenu() {
 
 function renderBreakfast() {
   const wrapper = document.getElementById("breakfastList");
+  if (!wrapper) return;
 
   wrapper.innerHTML = breakfastItems
     .map(
@@ -137,6 +140,7 @@ function renderBreakfast() {
 
 function renderCombos() {
   const wrapper = document.getElementById("comboList");
+  if (!wrapper) return;
 
   wrapper.innerHTML = comboItems
     .map(
@@ -155,6 +159,7 @@ function renderCombos() {
 
 function renderCoffee() {
   const wrapper = document.getElementById("coffeeList");
+  if (!wrapper) return;
 
   wrapper.innerHTML = coffeeItems
     .map(
@@ -170,6 +175,7 @@ function renderCoffee() {
 
 function renderCateringPoints() {
   const wrapper = document.getElementById("cateringPoints");
+  if (!wrapper) return;
 
   wrapper.innerHTML = cateringPoints
     .map((item) => `<div class="catering-point">${item}</div>`)
@@ -179,6 +185,8 @@ function renderCateringPoints() {
 function setupMobileMenu() {
   const toggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
+
+  if (!toggle || !mobileMenu) return;
 
   toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");
@@ -195,15 +203,18 @@ function setupForm() {
   const form = document.getElementById("cateringForm");
   const message = document.getElementById("formMessage");
 
+  if (!form || !message) return;
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const data = new FormData(form);
-    const name = data.get("name");
-    const email = data.get("email");
-    const type = data.get("type");
+    const name = data.get("name") || "";
+    const email = data.get("email") || "";
+    const type = data.get("type") || "";
 
     message.textContent = `Ďakujeme, ${name}. Tvoj dopyt pre „${type}“ sme zaznamenali. Na adresu ${email} sa vám môže ozvať personál kantíny.`;
+
     form.reset();
   });
 }
