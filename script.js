@@ -1,4 +1,7 @@
-```js
+
+Do súboru `script.js` vlož **iba čistý JavaScript nižšie**. Nekopíruj žiadne značky ```.
+
+:::writing{variant="standard" id="62847"}
 const breakfastItems = [
   { name: "Kaiserka salámová 120g", allergens: "(1,3,7)", price: "2,30 €" },
   { name: "Kaiserka šunková", allergens: "(1,3,7)", price: "2,30 €" },
@@ -216,6 +219,7 @@ function setupForm() {
     const submitButton = form.querySelector('button[type="submit"]');
     const originalButtonText = submitButton ? submitButton.textContent : "";
 
+    message.className = "form-message loading";
     message.textContent = "Odosielam dopyt...";
 
     if (submitButton) {
@@ -227,10 +231,7 @@ function setupForm() {
       const formData = new FormData(form);
 
       if (!formData.get("_subject")) {
-        formData.append(
-          "_subject",
-          "Nový cateringový dopyt z webu Fajnota"
-        );
+        formData.append("_subject", "Nový cateringový dopyt z webu Fajnota");
       }
 
       const response = await fetch("https://formspree.io/f/xlgygpzv", {
@@ -242,14 +243,17 @@ function setupForm() {
       });
 
       if (response.ok) {
+        message.className = "form-message success";
         message.textContent =
           "Ďakujeme, váš dopyt bol úspešne odoslaný. Čoskoro sa vám ozveme.";
         form.reset();
       } else {
+        message.className = "form-message error";
         message.textContent =
           "Dopyt sa nepodarilo odoslať. Skúste to prosím znova.";
       }
     } catch (error) {
+      message.className = "form-message error";
       message.textContent =
         "Dopyt sa nepodarilo odoslať. Skontrolujte internetové pripojenie a skúste to znova.";
     } finally {
@@ -272,5 +276,10 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-```
+:::
+
+Po vložení musí súbor `script.js` začínať presne takto:
+
+```text
+const breakfastItems = [
 
