@@ -740,3 +740,9 @@ textarea {
   }
 }
 
+.btn,
+.btn-secondary {
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none;
+}
