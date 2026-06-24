@@ -38,13 +38,13 @@ const dailyMenuItems = [
     day: "Pondelok",
     title: "Denné menu",
     description: 
-      `Slepačí vývar (1,3,9) 
-       Mexická zeleninová (9) 
-       1, Kurací Gordon Blue, varené zemiaky, tatárska omáčka (1,3,9) 
-       2, Grilovaný bôčik s nakladanou cibulkou, ryža s vajíčkom (3,6,10) 
-       3, Penne v pesto omáčke s parmezánom (1,3,7) 
-       4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10) 
-       5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10) 
+      `Slepačí vývar (1,3,9) ,
+       Mexická zeleninová (9) ,
+       1, Kurací Gordon Blue, varené zemiaky, tatárska omáčka (1,3,9) ,
+       2, Grilovaný bôčik s nakladanou cibulkou, ryža s vajíčkom (3,6,10) ,
+       3, Penne v pesto omáčke s parmezánom (1,3,7) ,
+       4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10) ,
+       5, Vyprážaný syr, pečené zemiaky, domáca tatárska omáčka (1,3,7,10) ,
        6, Hovädzie líčka na víne, zemiakové pyré (7,9)`,
     price: "od 6,90 €",
   },
