@@ -1,3 +1,4 @@
+```js
 const breakfastItems = [
   { name: "Kaiserka salámová 120g", allergens: "(1,3,7)", price: "2,30 €" },
   { name: "Kaiserka šunková", allergens: "(1,3,7)", price: "2,30 €" },
@@ -190,11 +191,15 @@ function setupMobileMenu() {
 
   toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");
+
+    const isOpen = mobileMenu.classList.contains("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 
   mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
     });
   });
 }
@@ -205,17 +210,54 @@ function setupForm() {
 
   if (!form || !message) return;
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const data = new FormData(form);
-    const name = data.get("name") || "";
-    const email = data.get("email") || "";
-    const type = data.get("type") || "";
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton ? submitButton.textContent : "";
 
-    message.textContent = `Ďakujeme, ${name}. Tvoj dopyt pre „${type}“ sme zaznamenali. Na adresu ${email} sa vám môže ozvať personál kantíny.`;
+    message.textContent = "Odosielam dopyt...";
 
-    form.reset();
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Odosielam...";
+    }
+
+    try {
+      const formData = new FormData(form);
+
+      if (!formData.get("_subject")) {
+        formData.append(
+          "_subject",
+          "Nový cateringový dopyt z webu Fajnota"
+        );
+      }
+
+      const response = await fetch("https://formspree.io/f/xlgygpzv", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        message.textContent =
+          "Ďakujeme, váš dopyt bol úspešne odoslaný. Čoskoro sa vám ozveme.";
+        form.reset();
+      } else {
+        message.textContent =
+          "Dopyt sa nepodarilo odoslať. Skúste to prosím znova.";
+      }
+    } catch (error) {
+      message.textContent =
+        "Dopyt sa nepodarilo odoslať. Skontrolujte internetové pripojenie a skúste to znova.";
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    }
   });
 }
 
@@ -230,3 +272,5 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+```
+
