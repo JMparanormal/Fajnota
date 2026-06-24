@@ -283,3 +283,4 @@ Po vložení musí súbor `script.js` začínať presne takto:
 ```text
 const breakfastItems = [
 
+document.addEventListener("DOMContentLoaded", init);
