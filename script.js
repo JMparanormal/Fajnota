@@ -77,8 +77,8 @@ const dailyMenuItems = [
     day: "Štvrtok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-    Brokolicová krémová (7,9) 1, 
-    Francúzske zemiaky s kyslou uhorkou (3,7) 
+    Brokolicová krémová (7,9)
+    1, Francúzske zemiaky s kyslou uhorkou (3,7) 
     2, Panenka na parmezánovom rizote (7,9) 
     3, Šafránové risotto s hráškom a parmezánom (7) 
     4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10) 
