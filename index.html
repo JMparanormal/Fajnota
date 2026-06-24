@@ -340,26 +340,9 @@
                   Accept: "application/json",
                 },
               });
-
-              if (response.ok) {
-                message.textContent =
-                  "Ďakujeme, váš dopyt bol úspešne odoslaný.";
-                form.reset();
-              } else {
-                message.textContent =
-                  "Dopyt sa nepodarilo odoslať. Skúste to prosím znova.";
-              }
-            } catch (error) {
-              message.textContent =
-                "Dopyt sa nepodarilo odoslať. Skontrolujte internetové pripojenie a skúste to znova.";
-            } finally {
-              submitButton.disabled = false;
-              submitButton.textContent = originalButtonText;
-            }
-          },
-          true
-        );
-      });
-    </script>
+<script src="script.js"></script>
+</body>
+</html>
+        
   </body>
 </html>
