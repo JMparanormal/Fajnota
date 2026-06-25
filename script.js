@@ -205,17 +205,8 @@ function setupForm() {
 
   if (!form || !message) return;
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const data = new FormData(form);
-    const name = data.get("name") || "";
-    const email = data.get("email") || "";
-    const type = data.get("type") || "";
-
-    message.textContent = `Ďakujeme, ${name}. Tvoj dopyt pre „${type}“ sme zaznamenali. Na adresu ${email} sa vám môže ozvať personál kantíny.`;
-
-    form.reset();
+  form.addEventListener("submit", () => {
+    message.textContent = "Dopyt sa odosiela...";
   });
 }
 
