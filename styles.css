@@ -57,6 +57,14 @@ button,
 input,
 select,
 textarea {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 3px solid rgba(232, 132, 46, 0.45);
   outline-offset: 3px;
 }
@@ -119,13 +127,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 28px;
-}
-
-.menu a,
-.mobile-menu a {
-  color: var(--muted);
-  font-weight: 600;
-  transition: color 0.2s ease;
 }
 
 .menu a,
@@ -257,10 +258,6 @@ h3 {
   transform: translateY(-2px);
 }
 
-.btn-primary {
-  background: var(--dark);
-  color: white;
-}
 
 .btn-primary {
   background: #215a3c;
@@ -354,9 +351,6 @@ h3 {
   margin-bottom: 14px;
 }
 
-.info-box {
-  margin-bottom: 0;
-}
 
 .info-box p {
   margin: 6px 0 0;
