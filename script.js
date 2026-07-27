@@ -51,7 +51,7 @@ const dailyMenuItems = [
     day: "Utorok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-    Mexická zeleninová (9)
+    Mexická zeleninová (7,9)
 1, Sviečková na smotane, domáca karlovarská knedla (1,3,7)
 2, Špagety v špenátovej omáčke s kuracími prsiami (1,3,7,9)
 3, Vyprážaná parenica, pečené zemiaky, tatárska omáčka (1,3,7)
