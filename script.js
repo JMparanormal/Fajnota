@@ -38,52 +38,52 @@ const dailyMenuItems = [
     day: "Pondelok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) ,
-   Brokolicová krémová (7,9)
-1, Slovenské risotto s kuracím mäsom a syrom (7)
-2, Burito s hovädzím trhaným a chedarom, americké zemiaky (1,3,7)
-3, Vyprážaný karfiol, varené zemiaky, tatárska omáčka (1,3,7)
+   Paradajková s parmezánom (7,9)
+1, Bravčový steak s volským okom, štuchané zemiaky (3,7,9)
+2, Penne v chedarovej omáčke s kuracími prsiami (1,3,7,9)
+3, Cuketové risotto s parmezánom (7,9)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos na špargľovom risotto (4,7,9)`,
+6, Hovädzie líčka na víne, zemiakové pyre (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Utorok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-    Kelová s párkom (1,3,9)
-1, Segedínsky guľáš s domácou parenou knedľou (1,3,7)
-2, Grilované kuracie prsia na šafránovom risotte s parmezánom (7,9)
-3, Rigatoni v omáčke so sušeými paradajkami, baby špenátom a parmezánom (1,3,7)
+    Frankufrtská s párkom (1,3,9)
+1, Gyros z kuracích prs, ryža s hráškom (7,9)
+2, Švédske mäsové guľky, zemiakové pyré, brusnice (1,3,7,9)
+3, Lasagne Spinachi (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos na špargľovom risotto (4,7,9)`,
+6, Hovädzie líčka na víne, zemiakové pyre (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Streda",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Špenátová (7,9)
-1, Vyprážané vykostené kuracie stehno v corn flakes, zemiakové pyré, uhorkový šalát (1,3,7)
-2, Tagliatelle Bolognese s parmezánom (1,3,7)
-3, Špenátový hummus s falafelom a grilovanou zeleninou (1,5,6,11)
+Mrkvová so zázvorom (7,9)
+1, Hovädzí Tokáň, tarhoňa (1,3,7)
+2, Kuracie prsia v arašidovej omáčke s ryžou (1,3,5,7)
+3, Vyprážané šampiňony, zemiakové pyré, tatárska omáčka (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos na špargľovom risotto (4,7,9)`,
+6, Hovädzie líčka na víne, zemiakové pyre (7,9)`,
     price: "od 6,90 €",
   },
   {
     day: "Štvrtok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Lusková kyslá (7,9)
-1, Šošovicový prívarok, bravčové fašírky (1,3,7)
-2, Hovädzí stroganov, ryža (1,3,7,10)
-3, Penne pomodoro s grilovaným Halloumi syrom (1,3,7)
+Boršč (9)
+1, Kuracie cordon bleu s varenými zemiakmi a tatárskou omáčkou (1,3,7)
+2, Grilovaná bravčová panenka na parmezánovom rizote (7,9)
+3, Batatová placka s Rattatouile a balkánskym syrom (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos na špargľovom risotto (4,7,9)`,
+6, Hovädzie líčka na víne, zemiakové pyre (7,9)`,
     price: "od 6,90 €",
   },
 
@@ -92,13 +92,13 @@ Lusková kyslá (7,9)
     day: "Piatok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Minestrone (9)
-1, Vyprážaná bravčová krkovička, zemiakové pyré, paradajkový šalát (1,3,7)
-2, Kuracie red curry s ananásom a ryžou (1,6,7,9)
-3, Slivkové pirohy s makom (1,3,7)
+Fazulová (9)
+1, Kuracia roláda so šunkou ,syrom a špenátom, ryža (1,3,7,9)
+2, Bravčový pivný guláš s nakladanou cibulou, domáca karlovarská knedla (1,3,7,9)
+3, Ovocná žemlovka (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos na špargľovom risotto (4,7,9)`,
+6, Hovädzie líčka na víne, zemiakové pyre (7,9)`,
     price: "od 6,90 €",
   },
 ];
