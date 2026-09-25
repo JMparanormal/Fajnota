@@ -38,52 +38,52 @@ const dailyMenuItems = [
     day: "Pondelok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) ,
-   Hrášková s mätou (7)
-1, Bravčová panenka na grilovanej zelenine, ryža 
-2, Kuracie prsia v parmezánovom cestíčku, zemiakové pyré (1,3,7)
-3, Cuketové placky s fresh šalátom, jogurtový dresing (3,7)
+   Paradajková so syrom (7)
+1, Kuracie soté v zemiakovej placke so syrom (1,3,7)
+2, Grilovaný bôčik s nakladanou cibulkou, ryža s vajíčkom (3)
+3, Grilovaný encián, varené zemiaky, brusnice (7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos s kapary omáčkou, varené zemiaky (4,7)`,
+6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Utorok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9)
-Hŕstková (7,9)
-1, Francúzske zemiaky s kyslou uhorkou (3,7)
-2, Grilované kuracie prsia so sušenými paradajkamí, ryža (7,9)
-3, Rigatoni fungi s parmezánom (1,3,7)
+Cícerová (7,9)
+1, Bratislavské bravčové pliecko, parená knedľa (1,3,7)
+2, Gyros z kuracích pŕs, ryža s hráškom (7)
+3, Rigatoni v cheddarovej omáčke s jalapenos (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos s kapary omáčkou, varené zemiaky (4,7)`,
+6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Streda",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Hokkaido (7,9)
-1, Hovädzí madarský guláš, parená knedľa (7,10)
-2, Kurací špíz, pečené zemiaky, smotanový dresing (7)
-3, Hráškové risotto s mozzarellou (1,3,7)
+Šošovicová kyslá (7,9)
+1, Hovädzia viedenská roštenka s cibuľou, ryža
+2, Pečené kuracie stehno, varené zemiaky, kapustový šalát
+3, Šafránové risotto s hráškom a parmezánom (7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos s kapary omáčkou, varené zemiaky (4,7)`,
+6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Štvrtok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Brokolicová krémová (7,9)
-1, Bravčové čevapčiči, varené zemiaky, domáci ajvar (1,3,7)
-2, Gnocchi v špenátovej omáčke s trhaným hovädzím líčkom (1,3,7)
-3, Penne pomodoro s grilovaným halloumi syrom (1,3,7)
+Cesnaková krémová (7,9)
+1, Bravčová panenka na hubách, ryža (7,9)
+2, Fish and Chips, hranoky (1,3,7)
+3, Vyprážaný karfiol so zemiakovým pyré a tatarkou (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos s kapary omáčkou, varené zemiaky (4,7)`,
+6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
     price: "od 6,90 €",
   },
 
@@ -92,13 +92,13 @@ Brokolicová krémová (7,9)
     day: "Piatok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Gulášová polievka (9)
-1, Hovädzí stroganov, ryža (7,10)
-2, Kuracie stripsy, zemiakovo-batatové pyré (1,3,7,9)
-3, Dukátové buchtičky s vanilkovým krémom (1,3,7)
+Rybacia (2,4,9)
+1, Kurací černohorský rezeň so syrom, pečené zemiaky (1,3,7)
+2, BBQ kuracie stehienka so sezamom, jasmínová ryža s hráškom (10,11)
+3, Tvarohové palacinky s pudingom (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Grilovaný losos s kapary omáčkou, varené zemiaky (4,7)`,
+6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
     price: "od 6,90 €",
   },
 ];
