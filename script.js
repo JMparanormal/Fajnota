@@ -38,52 +38,52 @@ const dailyMenuItems = [
     day: "Pondelok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) ,
-   Paradajková so syrom (7)
-1, Kuracie soté v zemiakovej placke so syrom (1,3,7)
-2, Grilovaný bôčik s nakladanou cibulkou, ryža s vajíčkom (3)
-3, Grilovaný encián, varené zemiaky, brusnice (7)
+   Tekvicová so zázvorom (7)
+1, Vyprážané kuracie prsia plnené slaninou a halloumi syrom, zemiakové pyré (1,3,7)
+2, Burito s bravčovým trhaným a chedarom, americké zemiaky (1,3,7)
+3, Hubové risotto s parmezánom (7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
+6, Jack Daniel's bravčové rebrá so šťuchanými zemiakmi, coleslaw šalát (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Utorok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9)
-Cícerová (7,9)
-1, Bratislavské bravčové pliecko, parená knedľa (1,3,7)
-2, Gyros z kuracích pŕs, ryža s hráškom (7)
-3, Rigatoni v cheddarovej omáčke s jalapenos (1,3,7)
+Mexická zeleninová (9)
+1, Bryndzové halušky so slaninkou (1,3,7)
+2, Hovädzie po sečuánsky s ryžou (6,7,10)
+3, Vyprážaná parenica, pečené zemiaky, tatárska omáčka (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
+6, Jack Daniel's bravčové rebrá so šťuchanými zemiakmi, coleslaw šalát (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Streda",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Šošovicová kyslá (7,9)
-1, Hovädzia viedenská roštenka s cibuľou, ryža
-2, Pečené kuracie stehno, varené zemiaky, kapustový šalát
-3, Šafránové risotto s hráškom a parmezánom (7)
+Mrkvovo-pomarančová (7,9)
+1, Zapekané kuracie prsia so šunkou a syrom, ryža
+2, Tagliatelle bolognese s parmezánom (1,3,7)
+3, Gnochhi v nivovej omáčke s orechmi (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
+6, Jack Daniel's bravčové rebrá so šťuchanými zemiakmi, coleslaw šalát (1,3,7)`,
     price: "od 6,90 €",
   },
   {
     day: "Štvrtok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Cesnaková krémová (7,9)
-1, Bravčová panenka na hubách, ryža (7,9)
-2, Fish and Chips, hranoky (1,3,7)
-3, Vyprážaný karfiol so zemiakovým pyré a tatarkou (1,3,7)
+Zemiaková s kôprom (7,9)
+1, Segedínsky guľáš s domácou parenou knedľou (1,3,7,9)
+2, Treska v panko strúhanke, zemiakové pyré, tatárska omáčka (1,3,7)
+3, Lasagne spinachi(1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
+6, Jack Daniel's bravčové rebrá so šťuchanými zemiakmi, coleslaw šalát (1,3,7)`,
     price: "od 6,90 €",
   },
 
@@ -92,13 +92,13 @@ Cesnaková krémová (7,9)
     day: "Piatok",
     title: "Denné menu",
     description: `Slepačí vývar (1,3,9) 
-Rybacia (2,4,9)
-1, Kurací černohorský rezeň so syrom, pečené zemiaky (1,3,7)
-2, BBQ kuracie stehienka so sezamom, jasmínová ryža s hráškom (10,11)
-3, Tvarohové palacinky s pudingom (1,3,7)
+Boršč (9)
+1, Hovädzie ragú, domáce maslové halušky (1,3,7)
+2, Penne v chedarovej omáčke s kuracími prsiami (10,11)
+3, Cisársky trhanec s ovocím (1,3,7)
 4, XXL Kurací rezeň, viedenský zemiakový šalát (1,3,7,9,10)
 5, Vyprážaný syr, pečné zemiaky, domáca tatárska omáčka(1,3,7,10)
-6, Hovädzí cheese burger, baby zemiaky (1,3,7)`,
+6, Jack Daniel's bravčové rebrá so šťuchanými zemiakmi, coleslaw šalát (1,3,7)`,
     price: "od 6,90 €",
   },
 ];
